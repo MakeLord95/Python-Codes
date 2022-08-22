@@ -1,1 +1,6 @@
 print("Hello world!")
+print("This program is useless")
+print("But it's fine")
+print("After all")
+print("It's a test program")
+print(":D")
