@@ -1,11 +1,8 @@
 leiviska = float(input("Anna leiviskät: "))
-print("")
 
 naula = float(input("Anna naulat: "))
-print("")
 
 luoti = float(input("Anna luodit: "))
-print("")
 
 # print(f"Leiviskät: {leiviska}")
 # print(f"Naulat: {naula}")
