@@ -1,21 +1,23 @@
-# OHJELMA KESKEN!
-# EI OLE VIELÄ VALMIS!!!
+import math
 
-nbr = input("Syötä luku: ")
-nbr_big = nbr
-nbr_smol = nbr
+nbr_str = input("Syötä luku: ")
+nbr_big = -math.inf
+nbr_smol = math.inf
 
-while True:
-    if nbr != '':
-        if nbr > nbr_big:
-            nbr_big = nbr
+while nbr_str != '':
 
-        if nbr < nbr_smol:
-            nbr_smol = nbr
+    nbr = int(nbr_str)
 
-        nbr = None
-        nbr = input("Syötä luku: ")
-    else:
-        print(f"Big: {nbr_big}")
-        print(f"Smol: {nbr_smol}")
-        break
+    if nbr > nbr_big:
+        nbr_big = nbr
+
+    if nbr < nbr_smol:
+        nbr_smol = nbr
+
+    nbr_str = input("Syötä luku: ")
+if nbr_big == -math.inf or nbr_smol == math.inf:
+    print("Et syöttänyt arvoja!")
+
+else:
+    print(f"Suurin syöttämäsi luku: {nbr_big}")
+    print(f"Pienin syöttämäsi luku: {nbr_smol}")
