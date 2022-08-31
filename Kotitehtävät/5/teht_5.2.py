@@ -1,13 +1,13 @@
 num = int
-list = []
+lista = []
 res = None
 
 while num != "":
     num = str(input("Anna luku: "))
 
     if num != "":
-        list.append(num)
-        res = [eval(i) for i in list]
+        lista.append(num)
+        res = [eval(i) for i in lista]
 
     if input == "":
         break
