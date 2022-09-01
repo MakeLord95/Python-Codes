@@ -12,7 +12,6 @@ while True:
             break
 
         else:
-
             trys = trys - 1
             input_name = input("Tunnus: ")
             input_pass = input("Salasana: ")
