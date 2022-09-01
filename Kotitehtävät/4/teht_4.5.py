@@ -12,7 +12,7 @@ while True:
             break
 
         else:
-            print("Pääsy evätty")
+
             trys = trys - 1
             input_name = input("Tunnus: ")
             input_pass = input("Salasana: ")
