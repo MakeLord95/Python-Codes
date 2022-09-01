@@ -18,4 +18,5 @@ while True:
             input_pass = input("Salasana: ")
 
     else:
+        print("Pääsy evätty")
         break
