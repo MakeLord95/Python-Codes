@@ -1,22 +1,20 @@
+res = None
 seasons = ("Kevät", "Kesä", "Syksy", "Talvi")
+while True:
+    user = int(input("Syötä kuukauden numero: "))
 
-print(seasons)
-user_input = int(input(": "))
-if user_input == 1 or user_input == 2 or user_input == 3:
-    season =
+    if user == 3 or user == 4 or user == 5:
+        print(seasons[0])
 
-res = seasons[user_input - 1]
-print(res)
+    elif user == 6 or user == 7 or user == 8:
+        print(seasons[1])
 
+    elif user == 9 or user == 10 or user == 11:
+        print(seasons[2])
 
+    elif user == 12 or user == 1 or user == 2:
+        print(seasons[3])
 
-# Kirjoita ohjelma, joka kysyy käyttäjältä kuukauden numeron,
-# jonka jälkeen ohjelma tulostaa sitä vastaavan vuodenajan
-# (kevät, kesä, syksy, talvi).
-#
-# Tallenna ohjelmassasi kuukausia
-# vastaavat vuodenajat merkkijonoina monikkotietorakenteeseen.
-
-# Määritellään kukin vuodenaika kolmen kuukauden mittaiseksi
-# siten, että joulukuu on ensimmäinen talvikuukausi.
-
+    else:
+        print("Et syöttänyt kuukautta!")
+        break
