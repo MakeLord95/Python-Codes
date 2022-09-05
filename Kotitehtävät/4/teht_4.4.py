@@ -16,4 +16,3 @@ while True:
 
     else:
         user_nbr = int(input("Arvaa koneen arpoma numero: "))
-
