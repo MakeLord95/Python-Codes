@@ -3,14 +3,12 @@ from collections import Counter
 
 
 def airport_search(country_code):
-    # sql = "select name, municipality from airport where gps_code = '\"" + gps_code + "\"';"
-    sql = "select type from airport where iso_country = '\"" + country_code + "\"';"
+    sql = "select type, count(type) from airport where iso_country = '\"" + country_code + "\"' group by type order by count(type) asc;"
     kursori = yhteys.cursor()
     kursori.execute(sql)
     tulos = kursori.fetchall()
-    x = Counter(tulos)
-
-    print(x)
+    for i in tulos:
+        print(i)
 
 
 yhteys = mysql.connector.connect(
@@ -22,6 +20,5 @@ yhteys = mysql.connector.connect(
     autocommit=True
 )
 
-# iso_country = input("Anna maakoodi: ").upper()
-iso_country = "FI"
+iso_country = input("Anna maakoodi: ").upper()
 airport_search(iso_country)
