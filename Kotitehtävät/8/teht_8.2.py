@@ -1,15 +1,16 @@
 import mysql.connector
+from collections import Counter
 
 
 def airport_search(country_code):
     # sql = "select name, municipality from airport where gps_code = '\"" + gps_code + "\"';"
-    sql = "select type from airport where iso_country = '\"" + country_code + "\"' order by type asc;"
+    sql = "select type from airport where iso_country = '\"" + country_code + "\"';"
     kursori = yhteys.cursor()
     kursori.execute(sql)
     tulos = kursori.fetchall()
-    for x in tulos:
-        tulos.count(tulos[x])
+    x = Counter(tulos)
 
+    print(x)
 
 
 yhteys = mysql.connector.connect(
@@ -21,11 +22,6 @@ yhteys = mysql.connector.connect(
     autocommit=True
 )
 
-iso_country = input("Anna maakoodi: ").upper()
+# iso_country = input("Anna maakoodi: ").upper()
+iso_country = "FI"
 airport_search(iso_country)
-
-# Kirjoita ohjelma, joka kysyy käyttäjältä maakoodin (esimerkiksi FI)
-# ja tulostaa kyseisessä maassa olevien lentokenttien lukumäärät tyypeittäin.
-# Esimerkiksi Suomen osalta tuloksena on saatava tieto siitä,
-# että pieniä lentokenttiä on 65 kappaletta, helikopterikenttiä on
-# 15 kappaletta jne.
