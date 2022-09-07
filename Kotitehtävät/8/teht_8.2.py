@@ -1,5 +1,4 @@
 import mysql.connector
-from collections import Counter
 
 
 def airport_search(country_code):
