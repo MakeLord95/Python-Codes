@@ -21,9 +21,9 @@ yhteys = mysql.connector.connect(
 
 if True:
     ICAO = input("Anna ICAO koodi: ").upper()
-    airport_1 = airport_search(ICAO)
-
     ICAO_2 = input("Anna toisen kentän ICAO koodi: ").upper()
+
+    airport_1 = airport_search(ICAO)
     airport_2 = airport_search(ICAO_2)
 
     print(f"Kenttien etäisyys toisistaan: {distance.distance(airport_1, airport_2).km:.2f}km")
