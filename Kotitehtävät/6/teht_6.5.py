@@ -16,6 +16,6 @@ def odd_number_remover(nbr_lista):
 
 
 if True:
-    lista = random.sample(range(1, 100), 10)
+    lista = random.sample(range(1, 101), 10)
     print(f"Alkuperäinen lista: {lista}")
     print(f"Lista ilman parittomia lukuja: {odd_number_remover(lista)}")
