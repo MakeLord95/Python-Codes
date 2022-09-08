@@ -1,4 +1,4 @@
-gallon = int(input("Syötä bensiinin määrä Yhdysvaltain nestegallonoina: "))
+gallon = float(input("Syötä bensiinin määrä Yhdysvaltain nestegallonoina: "))
 
 
 def gallon_to_liter(retard_unit):
@@ -14,4 +14,4 @@ while gallon >= 0:
         break
 
     else:
-        gallon = int(input("Syötä bensiinin määrä Yhdysvaltain nestegallonoina: "))
+        gallon = float(input("Syötä bensiinin määrä Yhdysvaltain nestegallonoina: "))
