@@ -13,10 +13,11 @@ if True:
     pizza_1_dia_cm = float(input("Ensimmäisen pizzan halkaisia (cm): "))
     pizza_1_price = float(input("Ensimmäisen pizzan hinta (€): "))
 
+    pizza_1_price_per_m2 = pizza_calculator(pizza_1_dia_cm, pizza_1_price)
+
     pizza_2_dia_cm = float(input("Toisen pizzan halkaisia (cm) : "))
     pizza_2_price = float(input("Toisen pizzan hinta (€): "))
 
-    pizza_1_price_per_m2 = pizza_calculator(pizza_1_dia_cm, pizza_1_price)
     pizza_2_price_per_m2 = pizza_calculator(pizza_2_dia_cm, pizza_2_price)
 
     if pizza_1_price_per_m2 > pizza_2_price_per_m2:
