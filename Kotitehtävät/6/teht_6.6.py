@@ -11,10 +11,10 @@ def pizza_calculator(pizza_dia_cm, pizza_price):
 
 if True:
     pizza_1_dia_cm = float(input("1. pizzan halkaisia (cm): "))
-    pizza_1_price = float(input("1. pizzan hinta: "))
+    pizza_1_price = float(input("1. pizzan hinta (€): "))
 
     pizza_2_dia_cm = float(input("2. pizzan halkaisia (cm) : "))
-    pizza_2_price = float(input("2. pizzan hinta: "))
+    pizza_2_price = float(input("2. pizzan hinta (€): "))
 
     pizza_1 = pizza_calculator(pizza_1_dia_cm, pizza_1_price)
     pizza_2 = pizza_calculator(pizza_2_dia_cm, pizza_2_price)
