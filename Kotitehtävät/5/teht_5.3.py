@@ -1,14 +1,14 @@
 num = int(input("Syötä numero: "))
 
-isPrime = False
+notPrime = False
 
 if num > 1:
     for i in range(2, num):
         if (num % i) == 0:
-            isPrime = True
+            notPrime = True
             break
 
-    if isPrime:
+    if notPrime:
         print(f"{num} ei ole alkuluku.")
 
     else:
