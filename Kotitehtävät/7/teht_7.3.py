@@ -16,6 +16,7 @@ while valinta != 3:
 
     elif valinta == 2:
         Airport_Search = input("Syötä lentoaseman ICAO koodi: ").upper()
+
         if Airport_Search in airports:
             print(airports[Airport_Search])
 
