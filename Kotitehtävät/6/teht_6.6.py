@@ -16,13 +16,13 @@ if True:
     pizza_2_dia_cm = float(input("Toisen pizzan halkaisia (cm) : "))
     pizza_2_price = float(input("Toisen pizzan hinta (€): "))
 
-    pizza_1 = pizza_calculator(pizza_1_dia_cm, pizza_1_price)
-    pizza_2 = pizza_calculator(pizza_2_dia_cm, pizza_2_price)
+    pizza_1_price_per_m2 = pizza_calculator(pizza_1_dia_cm, pizza_1_price)
+    pizza_2_price_per_m2 = pizza_calculator(pizza_2_dia_cm, pizza_2_price)
 
-    if pizza_1 > pizza_2:
+    if pizza_1_price_per_m2 > pizza_2_price_per_m2:
         print("Toinen pizza on neliöhinnaltaan parempi!")
 
-    elif pizza_2 > pizza_1:
+    elif pizza_2_price_per_m2 > pizza_1_price_per_m2:
         print("Ensimmäinen pizza on neliöhinnaltaan parempi!")
 
     else:
