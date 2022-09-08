@@ -2,7 +2,7 @@ import math
 
 
 def pizza_calculator(pizza_dia_cm, pizza_price):
-    pizza_area_cm2 = math.pi / 4 * (pizza_dia_cm ** 2)
+    pizza_area_cm2 = math.pi / 4 * pizza_dia_cm ** 2
     pizza_area_m2 = pizza_area_cm2 * 0.01 * 0.01
     pizza_price_per_m2 = pizza_price / pizza_area_m2
 
