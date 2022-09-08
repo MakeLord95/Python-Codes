@@ -7,6 +7,6 @@ def number_list(nbr_list):
 
 
 if True:
-    lista = random.sample(range(1, 100), 10)
+    lista = random.sample(range(1, 101), 10)
     print(f"Listan summa: {number_list(lista)}")
     # print(f"Listan numerot: {lista}")
