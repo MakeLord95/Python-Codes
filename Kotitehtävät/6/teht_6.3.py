@@ -14,4 +14,4 @@ while gallon >= 0:
         break
 
     else:
-        gallon = int(input("Syötä bensiinin määrä nestegallonoina: "))
+        gallon = int(input("Syötä bensiinin määrä Yhdysvaltain nestegallonoina: "))
