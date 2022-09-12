@@ -20,7 +20,6 @@ def user_input_checker(user_input):
 
     if user_input not in options:
         print("Väärä valinta!")
-        # sys.exit()
         return 3
 
     else:
