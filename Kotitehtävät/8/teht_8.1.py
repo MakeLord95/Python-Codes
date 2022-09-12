@@ -19,4 +19,10 @@ yhteys = mysql.connector.connect(
 )
 
 ICAO_Code = input("Anna ICAO koodi: ").upper()
-print(airport_search(ICAO_Code))
+airport = airport_search(ICAO_Code)
+
+if not airport:
+    print("Et syöttänyt kunnollista ICAO-koodia!")
+
+else:
+    print(airport)
