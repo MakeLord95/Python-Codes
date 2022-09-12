@@ -6,7 +6,7 @@ def airport_search(gps_code):
     kursori = yhteys.cursor()
     kursori.execute(sql)
     tulos = kursori.fetchall()
-    print(tulos)
+    return tulos
 
 
 yhteys = mysql.connector.connect(
@@ -19,4 +19,4 @@ yhteys = mysql.connector.connect(
 )
 
 ICAO_Code = input("Anna ICAO koodi: ").upper()
-airport_search(ICAO_Code)
+print(airport_search(ICAO_Code))
