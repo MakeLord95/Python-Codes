@@ -20,8 +20,8 @@ yhteys = mysql.connector.connect(
 )
 
 if True:
-    ICAO = input("Anna ICAO koodi: ").upper()
-    ICAO_2 = input("Anna toisen kentän ICAO koodi: ").upper()
+    ICAO = input("Anna ensimmäisen lentokentän ICAO koodi: ").upper()
+    ICAO_2 = input("Anna toisen lentokentän ICAO koodi: ").upper()
 
     airport_1 = airport_search(ICAO)
     airport_2 = airport_search(ICAO_2)
