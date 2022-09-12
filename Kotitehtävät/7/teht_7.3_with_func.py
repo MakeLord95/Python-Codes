@@ -1,6 +1,3 @@
-import sys
-
-
 def airport_lookup(gps_code):
     if gps_code in airports:
         print(airports[gps_code])
@@ -23,7 +20,8 @@ def user_input_checker(user_input):
 
     if user_input not in options:
         print("Väärä valinta!")
-        sys.exit()
+        # sys.exit()
+        return 3
 
     else:
         user_input_int = int(user_input)
