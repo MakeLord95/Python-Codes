@@ -2,7 +2,8 @@ airports = {"EFET": "Enontekiön lentoasema",
             "EFHK": "Helsinki-Vantaan lentoasema",
             "EFIV": "Ivalon lentoasema",
             "EFJO": "Joensuun lentoasema",
-            "EFJY": "Jyväskylän lentoasema"}
+            "EFJY": "Jyväskylän lentoasema",
+            "EFHV": "Hyvinkään lentoasema"}
 
 print("1. Syötä tietoja / 2. Hae tietoja / 3. Lopeta")
 valinta = int(input("Valinta: "))
