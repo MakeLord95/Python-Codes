@@ -7,7 +7,7 @@ def airport_search(country_code):
     kursori.execute(sql)
     tulos = kursori.fetchall()
     for i in tulos:
-        print(i)
+        print(f"{i[0]}: {i[1]}")
 
 
 yhteys = mysql.connector.connect(
