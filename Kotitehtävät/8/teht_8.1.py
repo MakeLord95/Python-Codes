@@ -25,4 +25,5 @@ if not airport:
     print("Et syöttänyt kunnollista ICAO-koodia!")
 
 else:
-    print(airport)
+    for i in airport:
+        print(f"{i[0]}: {i[1]}")
