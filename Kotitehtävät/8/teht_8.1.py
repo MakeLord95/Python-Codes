@@ -2,7 +2,7 @@ import mysql.connector
 
 
 def airport_search(gps_code):
-    sql = "select name, municipality from airport where gps_code = '\"" + gps_code + "\"';"
+    sql = "select name, municipality from airport where gps_code = '" + gps_code + "';"
     kursori = yhteys.cursor()
     kursori.execute(sql)
     tulos = kursori.fetchall()

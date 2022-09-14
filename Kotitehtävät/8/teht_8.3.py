@@ -3,7 +3,7 @@ from geopy import distance
 
 
 def airport_search(icao_code):
-    sql = "select latitude_deg, longitude_deg from airport where ident = '\"" + icao_code + "\"';"
+    sql = "select latitude_deg, longitude_deg from airport where ident = '" + icao_code + "';"
     kursori = yhteys.cursor()
     kursori.execute(sql)
     tulos = kursori.fetchall()

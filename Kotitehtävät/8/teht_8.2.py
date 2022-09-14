@@ -2,12 +2,12 @@ import mysql.connector
 
 
 def airport_search(country_code):
-    sql = "select type, count(type) from airport where iso_country = '\"" + country_code + "\"' group by type order by count(type) asc;"
+    sql = "select type, count(type) from airport where iso_country = '" + country_code + "' group by type order by count(type) asc;"
     kursori = yhteys.cursor()
     kursori.execute(sql)
     tulos = kursori.fetchall()
     for i in tulos:
-        print(f"{i[0]}: {i[1]}")
+        print(f"{i[0]} : {i[1]}")
 
 
 yhteys = mysql.connector.connect(
