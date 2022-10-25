@@ -1,4 +1,3 @@
-import sys
 import random
 
 
@@ -50,4 +49,9 @@ if __name__ == '__main__':
             if Car.traveled > 10000:
                 for i in Cars:
                     i.print_info()
-                sys.exit()
+                break
+
+        else:
+            continue
+
+        break
