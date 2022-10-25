@@ -27,7 +27,7 @@ class Auto:
             self.traveled = self.traveled
 
         elif aika > 0:
-            self.traveled = self. traveled + self.speed * aika
+            self.traveled = self. traveled + (self.speed * aika)
 
 
 if __name__ == '__main__':
@@ -38,6 +38,9 @@ if __name__ == '__main__':
     Car.accelerate(50)
     Car.travel(3)
     Car.print_info()
+
+    Car.accelerate(-50)
+    Car.travel(5)
 
     Car.accelerate(-200)
     Car.print_info()

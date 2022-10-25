@@ -33,7 +33,7 @@ class Car:
             self.traveled = self.traveled
 
         elif aika > 0:
-            self.traveled = self.traveled + self.speed * aika
+            self.traveled = self.traveled + (self.speed * aika)
 
 
 if __name__ == '__main__':
@@ -41,12 +41,13 @@ if __name__ == '__main__':
     for i in range(10):
         Cars.append(Car(f"ABC-{str(i+1)}", random.randint(100, 200)))
 
+
     while True:
         for Car in Cars:
             Car.accelerate(random.randint(-10, 15))
             Car.travel(1)
 
             if Car.traveled > 10000:
-                for Car in Cars:
-                    Car.print_info()
+                for i in Cars:
+                    i.print_info()
                 sys.exit()
