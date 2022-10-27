@@ -7,7 +7,7 @@ app = flask.Flask(__name__)
 @app.route('/alkuluku/')
 def alkuluku():
     args = flask.request.args
-    number = int(args.get("number"))
+    number = int(args.get(""))
     tulos = test_prime(number)
 
     vastaus = {
