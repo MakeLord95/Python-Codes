@@ -11,11 +11,11 @@ def airport_search(country_code):
 
 
 yhteys = mysql.connector.connect(
-    host='127.0.0.1',
+    host='make-s.duckdns.org',
     port=3306,
-    database='flight_game',
-    user='root',
-    password='root',
+    user='lentopeli',
+    password='fl1ght_g4m3',
+    database='lentopeli',
     autocommit=True
 )
 
