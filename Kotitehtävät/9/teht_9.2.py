@@ -5,7 +5,6 @@ class Auto:
         self.speed = 0
         self.traveled = 0
 
-
     def print_info(self):
         print(f"Auton {self.licence}")
         print(f"Nopeus: {self.speed} km/h")

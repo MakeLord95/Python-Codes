@@ -7,12 +7,10 @@ class Hissi:
         self.ylin = ylin
         self.nykyinen = alin
 
-
     def print_info(self):
         print(f"\nHissin ylin kerros: {self.ylin}")
         print(f"Hissin alin kerros: {self.alin}")
         print(f"Hissin nykyinen kerros: {self.nykyinen}\n")
-
 
     def go_to_floor(self, kerros):
 
@@ -35,12 +33,10 @@ class Hissi:
                     Hissi.floor_down(self, kerros)
                     x = x - 1
 
-
     def floor_up(self, kerros):
         if self.nykyinen < kerros:
             self.nykyinen = self.nykyinen + 1
             print(f"Hissi on kerroksessa {self.nykyinen}")
-
 
     def floor_down(self, kerros):
         if self.nykyinen > kerros:

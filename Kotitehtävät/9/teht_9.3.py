@@ -5,7 +5,6 @@ class Auto:
         self.speed = 0
         self.traveled = 0
 
-
     def print_info(self):
         print(f"Auton {self.licence}")
         print(f"Nopeus: {self.speed} km/h")
@@ -27,7 +26,7 @@ class Auto:
             self.traveled = self.traveled
 
         elif aika > 0:
-            self.traveled = self. traveled + (self.speed * aika)
+            self.traveled = self.traveled + (self.speed * aika)
 
 
 if __name__ == '__main__':

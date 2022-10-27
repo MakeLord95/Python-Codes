@@ -8,7 +8,6 @@ class Talo:
         for i in range(nbr_of_elevators):
             self.elevators.append(Hissi(alin_kerros, ylin_kerros))
 
-
     def print_data(self):
         print(f"Talon ylin kerros: {self.ylin_kerros}")
         print(f"Talon alin kerros: {self.alin_kerros}")
@@ -16,7 +15,6 @@ class Talo:
 
         for i in self.elevators:
             i.print_info()
-
 
     def aja_hissia(self, hissi_nbr, kohde):
         elevator = self.elevators[hissi_nbr - 1]
@@ -27,19 +25,16 @@ class Talo:
             i.go_to_floor(self.alin_kerros)
 
 
-
 class Hissi:
     def __init__(self, alin, ylin):
         self.alin = alin
         self.ylin = ylin
         self.nykyinen = alin
 
-
     def print_info(self):
         print(f"\nHissin ylin kerros: {self.ylin}")
         print(f"Hissin alin kerros: {self.alin}")
         print(f"Hissin nykyinen kerros: {self.nykyinen}\n")
-
 
     def go_to_floor(self, kerros):
 
@@ -62,12 +57,10 @@ class Hissi:
                     Hissi.floor_down(self, kerros)
                     x = x - 1
 
-
     def floor_up(self, kerros):
         if self.nykyinen < kerros:
             self.nykyinen = self.nykyinen + 1
             print(f"Hissi on kerroksessa {self.nykyinen}\n")
-
 
     def floor_down(self, kerros):
         if self.nykyinen > kerros:

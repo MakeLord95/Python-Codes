@@ -8,13 +8,11 @@ class Car:
         self.speed = 0
         self.traveled = 0
 
-
     def print_info(self):
         print(f"Auton {self.licence}")
         print(f"Nopeus: {self.speed} km/h")
         print(f"Huippunopeus: {self.max_speed} km/h")
         print(f"Kulkema matka: {self.traveled} km\n")
-
 
     def accelerate(self, speed_change):
         if 0 < self.speed + speed_change < self.max_speed:
@@ -25,7 +23,6 @@ class Car:
 
         elif self.speed + speed_change > self.max_speed:
             self.speed = self.max_speed
-
 
     def travel(self, aika):
         if aika < 0:
@@ -38,8 +35,7 @@ class Car:
 if __name__ == '__main__':
     Cars = []
     for i in range(10):
-        Cars.append(Car(f"ABC-{str(i+1)}", random.randint(100, 200)))
-
+        Cars.append(Car(f"ABC-{str(i + 1)}", random.randint(100, 200)))
 
     while True:
         for Car in Cars:

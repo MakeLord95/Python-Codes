@@ -2,7 +2,6 @@ class Julkaisu:
     def __init__(self, name):
         self.nimi = name
 
-
     def tulosta_tiedot(self):
         print(f"\nJulkaisun nimi: {self.nimi}")
 
@@ -12,7 +11,6 @@ class Kirja(Julkaisu):
         super().__init__(name)
         self.writer = writer
         self.page_count = page_count
-
 
     def tulosta_tiedot(self):
         super().tulosta_tiedot()
@@ -24,7 +22,6 @@ class Lehti(Julkaisu):
     def __init__(self, name, editor_in_chief):
         super().__init__(name)
         self.editor_in_chief = editor_in_chief
-
 
     def tulosta_tiedot(self):
         super().tulosta_tiedot()

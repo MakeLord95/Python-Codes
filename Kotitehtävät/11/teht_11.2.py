@@ -8,11 +8,9 @@ class Auto:
         self.speed = 0
         self.traveled = 0
 
-
     def tulosta_tiedot(self):
         print(f"Auton {self.licence}")
         print(f"Matkamittarin lukema: {self.traveled}km\n")
-
 
     def accelerate(self, speed_change):
         if 0 < self.speed + speed_change < self.max_speed:
@@ -23,7 +21,6 @@ class Auto:
 
         elif self.speed + speed_change > self.max_speed:
             self.speed = self.max_speed
-
 
     def travel(self, aika):
         if aika < 0:
@@ -38,7 +35,6 @@ class Sahkoauto(Auto):
         super().__init__(licence, max_speed)
         self.akkukapasiteetti = akkukapasitetti
 
-
     def tulosta_tiedot(self):
         super().tulosta_tiedot()
 
@@ -48,10 +44,8 @@ class Polttomoottoriauto(Auto):
         super().__init__(licence, max_speed)
         self.bensatankki_litra = bensatankki_litra
 
-
     def tulosta_tiedot(self):
         super().tulosta_tiedot()
-
 
 
 if __name__ == '__main__':
