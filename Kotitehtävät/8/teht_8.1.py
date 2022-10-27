@@ -11,7 +11,7 @@ def airport_search(gps_code):
 
 yhteys = mysql.connector.connect(
     host='make-s.duckdns.org',
-    port=3306,
+    port=19915,
     user='lentopeli',
     password='fl1ght_g4m3',
     database='lentopeli',

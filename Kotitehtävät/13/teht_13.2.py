@@ -4,20 +4,25 @@ import mysql.connector
 
 app = flask.Flask(__name__)
 
-yhteys = mysql.connector.connect(
-    host='make-s.duckdns.org',
-    port=3306,
-    user='lentopeli',
-    password='fl1ght_g4m3',
-    database='lentopeli',
-    autocommit=True
-)
+def mariadb_connect():
+    yhteys = mysql.connector.connect(
+        host='make-s.duckdns.org',
+        port=19915,
+        database='lentopeli',
+        user='lentopeli',
+        password='fl1ght_g4m3',
+        autocommit=True
+    )
+
+    return yhteys
 
 
-def kursori_func(sql_command):
+def kursori_func(sql_komento):
+    yhteys = mariadb_connect()
+
     kursori = yhteys.cursor()
 
-    kursori.execute(sql_command)
+    kursori.execute(sql_komento)
 
     tulos = kursori.fetchall()
 
