@@ -42,7 +42,7 @@ if __name__ == '__main__':
             Car.accelerate(random.randint(-10, 15))
             Car.travel(1)
 
-            if Car.traveled > 10000:
+            if Car.traveled >= 10000:
                 for i in Cars:
                     i.print_info()
                 break
