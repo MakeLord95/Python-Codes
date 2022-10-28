@@ -6,7 +6,7 @@ class Talo:
         self.nbr_of_elevators = nbr_of_elevators
 
         for i in range(nbr_of_elevators):
-            self.elevators.append(Hissi(alin_kerros, ylin_kerros))
+            self.elevators.append(Hissi(alin_kerros, ylin_kerros, i + 1))
 
     def print_data(self):
         print(f"\nTalon ylin kerros: {self.ylin_kerros}")
@@ -23,13 +23,15 @@ class Talo:
 
 
 class Hissi:
-    def __init__(self, alin, ylin):
+    def __init__(self, alin, ylin, nbr):
+        self.nbr = nbr
         self.alin = alin
         self.ylin = ylin
         self.nykyinen = alin
 
     def print_info(self):
-        print(f"\nHissin ylin kerros: {self.ylin}")
+        print(f"\nHissi {self.nbr}: ")
+        print(f"Hissin ylin kerros: {self.ylin}")
         print(f"Hissin alin kerros: {self.alin}")
         print(f"Hissin nykyinen kerros: {self.nykyinen}\n")
 
@@ -57,18 +59,18 @@ class Hissi:
     def floor_up(self, kerros):
         if self.nykyinen < kerros:
             self.nykyinen = self.nykyinen + 1
-            print(f"Hissi on kerroksessa {self.nykyinen}")
+            print(f"Hissi nro{self.nbr} on kerroksessa: {self.nykyinen}")
 
     def floor_down(self, kerros):
         if self.nykyinen > kerros:
             self.nykyinen = self.nykyinen - 1
-            print(f"Hissi on kerroksessa {self.nykyinen}")
+            print(f"Hissi nro{self.nbr} on kerroksessa: {self.nykyinen}")
 
 
 if __name__ == '__main__':
     lowest_floor = 1
     top_floor = 50
-    hissi_lkm = 3
+    hissi_lkm = 5
 
     house = Talo(lowest_floor, top_floor, hissi_lkm)
     house.print_data()
