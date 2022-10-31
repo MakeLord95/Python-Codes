@@ -1,4 +1,5 @@
 from playsound import playsound
+
 # Use playsound 1.2.2
 
 while True:

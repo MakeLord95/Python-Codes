@@ -1,4 +1,5 @@
 import multiprocessing
+
 print("Number of CPU cores: ", multiprocessing.cpu_count())
 
 # Alternative way of doing this:
