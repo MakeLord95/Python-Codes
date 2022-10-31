@@ -12,6 +12,5 @@ while user != "":
 
     user = input("Syötä nimi: ")
 
-
 for p in names:
     print(p)

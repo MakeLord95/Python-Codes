@@ -1,4 +1,5 @@
 import random
+
 rand_nbr = random.randint(1, 10)
 
 while True:

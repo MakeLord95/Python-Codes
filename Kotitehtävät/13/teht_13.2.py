@@ -1,8 +1,10 @@
 import json
+
 import flask
 import mysql.connector
 
 app = flask.Flask(__name__)
+
 
 def mariadb_connect():
     yhteys = mysql.connector.connect(

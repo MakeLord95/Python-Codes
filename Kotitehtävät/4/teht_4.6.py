@@ -1,5 +1,5 @@
-import random
 import math
+import random
 
 user = int(input("Syötä pisteiden määrä: "))
 
