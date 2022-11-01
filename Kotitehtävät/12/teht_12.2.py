@@ -40,6 +40,7 @@ if __name__ == '__main__':
 
     answer_2 = requests.get(address_2).json()
 
+    print(f"\nKaupungin {city_name} sää:")
     print("Säätila:", end=' ')
     for a in answer_2["weather"]:
         print(a["description"])
