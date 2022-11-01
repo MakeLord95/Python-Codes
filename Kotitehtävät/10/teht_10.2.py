@@ -18,7 +18,7 @@ class Talo:
 
     def aja_hissia(self, hissi_nbr, kohde):
         elevator = self.elevators[hissi_nbr - 1]
-        print(f"Ajetaan hissiä {hissi_nbr}\n")
+        print(f"\nAjetaan hissiä {hissi_nbr}:")
         elevator.go_to_floor(kohde)
 
 
@@ -33,7 +33,7 @@ class Hissi:
         print(f"\nHissi {self.nbr}: ")
         print(f"Hissin ylin kerros: {self.ylin}")
         print(f"Hissin alin kerros: {self.alin}")
-        print(f"Hissin nykyinen kerros: {self.nykyinen}\n")
+        print(f"Hissin nykyinen kerros: {self.nykyinen}")
 
     def go_to_floor(self, kerros):
 
