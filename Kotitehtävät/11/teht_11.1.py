@@ -3,7 +3,7 @@ class Julkaisu:
         self.nimi = name
 
     def tulosta_tiedot(self):
-        print(f"\nJulkaisun nimi: {self.nimi}")
+        print(f"Julkaisun nimi: {self.nimi}")
 
 
 class Kirja(Julkaisu):
@@ -15,7 +15,7 @@ class Kirja(Julkaisu):
     def tulosta_tiedot(self):
         super().tulosta_tiedot()
         print(f"Kirjan kirjoittaja: {self.writer}")
-        print(f"Kirjan sivumäärä: {self.page_count}")
+        print(f"Kirjan sivumäärä: {self.page_count}\n")
 
 
 class Lehti(Julkaisu):
