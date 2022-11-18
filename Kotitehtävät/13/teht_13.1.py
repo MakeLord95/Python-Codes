@@ -5,7 +5,7 @@ import flask
 app = flask.Flask(__name__)
 
 
-@app.route('/alkuluku/')
+@app.route('/alkuluku/<int:luku>')
 def alkuluku():
     args = flask.request.args
     number = int(args.get(""))
