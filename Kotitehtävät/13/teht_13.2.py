@@ -43,13 +43,11 @@ def get_airport_municipality(ident):
     return sql_result
 
 
-@app.route('/kentta/')
-def kentta():
-    args = flask.request.args
-    icao = str(args.get("")).upper()
+@app.route('/kentta/<string:airport>')
+def kentta(airport):
 
-    ident = icao.upper()
-    nimi = get_airport_name(icao)[0][0]
+    ident = airport.upper()
+    nimi = get_airport_name(ident)[0][0]
     municipality = get_airport_municipality(ident)[0][0]
 
     vastaus = {
