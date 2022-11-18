@@ -45,7 +45,6 @@ def get_airport_municipality(ident):
 
 @app.route('/kentta/<string:airport>')
 def kentta(airport):
-
     ident = airport.upper()
     nimi = get_airport_name(ident)[0][0]
     municipality = get_airport_municipality(ident)[0][0]
@@ -61,4 +60,4 @@ def kentta(airport):
 
 
 if __name__ == '__main__':
-    app.run(use_reloader=True, host='127.0.0.1', port=5000)
+    app.run(use_reloader=True, host='127.0.0.1', port=3000)
